@@ -1,0 +1,29 @@
+syntax = "proto3";
+ 
+option go_package = "./;rpcsvc";
+ 
+package rpcsvc;
+ 
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc Check (CheckReq) returns (CheckResp) {}
+}
+ 
+// The request message containing the user's name.
+message CheckReq {
+  string Content = 1;
+}
+
+message WordData {
+  string Keyword = 1;
+  string Category = 2;  
+}
+
+// The response message containing the greetings
+message CheckResp {
+  string Code = 1;
+  string Msg = 2;
+  string ReturnStr = 3;
+  repeated WordData WordList = 4;
+}
