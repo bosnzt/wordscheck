@@ -3,7 +3,7 @@
 
 支持本地化部署，无查询次数限制，
 
-微服务化，替代各种在线敏感词检测api。
+微服务化、永久免费可用，替代各种在线敏感词检测api。
 
 
 ## 简介
@@ -12,7 +12,7 @@
 + 支持直接本地部署运行，http json方式或rpc方式查询
 + 单服务参考查询效率70000次/分钟
 + 支持多个服务同时运行，提高检测效率
-+ 按需自定义添加和排除部分敏感词
++ 按需自定义添加文本白名单/黑名单
 + 自动更新最新词库，无需耗费大量工作时间整理维护词库
 
 
@@ -42,14 +42,14 @@
 ```shell
 [root@localhost svc]# cd /root/svc
 [root@localhost svc]# ls
-config.ini  exclude.txt  include.txt  wordscheck
+blacklist.txt  config.ini  whitelist.txt  wordscheck
 ```
 
 程序运行需要*能正常访问外网*
 
 设置config.ini参数，按需配置私钥、访问端口等
 
-[版本说明]，未配置私钥，服务会有部分限制，[购买私钥]
+[版本说明]，配置私钥后，使用服务完整功能 [购买私钥]
 
 2. 运行敏感词检测服务
 ```shell
@@ -75,9 +75,9 @@ curl结果
 }
 ```
 
-需要时可以添加敏感词到include.txt，排除敏感词到exclude.txt
+需要时可以添加文本到blacklist.txt，排除文本到whitelist.txt
 
-##  http方式接入
+##  http方式查询
 
 + go例子
 `example/http/go_case.go`
@@ -88,7 +88,7 @@ curl结果
 + node.js例子
 `example/http/nodejs/nodejs_case.js`
 
-##  rpc方式接入
+##  rpc方式查询
 + go例子
 `example/rpc/golang/go_case.go`
 
