@@ -13,6 +13,7 @@ import (
 type WordData struct {
 	Keyword  string `json:"keyword"`
 	Category string `json:"category"`
+	Position string `json:"position"`
 }
 
 type CheckResp struct {

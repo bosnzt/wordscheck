@@ -21,6 +21,10 @@ class WordData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string Category = 2;</code>
      */
     protected $Category = '';
+    /**
+     * Generated from protobuf field <code>string Position = 3;</code>
+     */
+    protected $Position = '';
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class WordData extends \Google\Protobuf\Internal\Message
      *
      *     @type string $Keyword
      *     @type string $Category
+     *     @type string $Position
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class WordData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->Category = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Position = 3;</code>
+     * @return string
+     */
+    public function getPosition()
+    {
+        return $this->Position;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Position = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPosition($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->Position = $var;
 
         return $this;
     }

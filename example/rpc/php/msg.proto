@@ -17,7 +17,8 @@ message CheckReq {
 
 message WordData {
   string Keyword = 1;
-  string Category = 2;  
+  string Category = 2;
+  string Position = 3;
 }
 
 // The response message containing the greetings
