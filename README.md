@@ -38,14 +38,14 @@
 + 不良价值观：劣迹艺人、负面文化
 
 ##  部署(Linux环境示例)
-1. 下载*svc*目录所有文件到服务器目录
+1. 下载*svc*文件夹到服务器，运行
 ```shell
 [root@localhost svc]# ls
 blacklist.txt  config.ini  whitelist.txt  wordscheck
 [root@localhost svc]# ./wordscheck
 ```
 
-2. curl确认服务运行
+2. curl测试下服务
 ```shell
 [root@localhost ~]# curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"content":"他在传播艳情内容"}'  http://localhost:8080/wordscheck
 ```
