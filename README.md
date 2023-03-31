@@ -66,8 +66,6 @@ curl结果
 
 config.ini  配置文件
 
-blacklist.txt、whitelist.txt  黑名单/白名单文件
-
 Windows、MacOs部署基本相同
 
 Windows运行文件wordscheck_win.exe
@@ -79,6 +77,11 @@ MacOs运行文件wordscheck_mac
 
 ##  rpc方式查询
 代码示例目录`example/rpc/`
+
+### 如何调整服务中的敏感词？
+blacklist.txt：黑名单，追加新的敏感词到检测服务中
+
+whitelist.txt：白名单，从检测服务中的删除某些敏感词
 
 
 [坚果墙在线敏感词检测]:http://www.wordscheck.com
