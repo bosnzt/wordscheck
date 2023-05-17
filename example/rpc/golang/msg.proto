@@ -19,6 +19,7 @@ message WordData {
   string Keyword = 1;
   string Category = 2;
   string Position = 3;
+  string Level = 4;
 }
 
 // The response message containing the greetings

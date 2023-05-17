@@ -13,6 +13,7 @@ import (
 type WordData struct {
 	Keyword  string `json:"keyword"`
 	Category string `json:"category"`
+	Level    string `json:"level"`
 	Position string `json:"position"`
 }
 

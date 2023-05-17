@@ -30,5 +30,6 @@ foreach ($reply->getWordList() as $obj) {
     echo $obj->getCategory() .PHP_EOL;
     echo $obj->getKeyword() .PHP_EOL;
     echo $obj->getPosition() .PHP_EOL;
+    echo $obj->getLevel() .PHP_EOL;
 }
 
