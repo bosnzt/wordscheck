@@ -59,7 +59,8 @@ curl结果
 	"word_list": [{
 		"keyword": "艳情",
 		"category": "色情",
-		"position": "4-5"
+		"position": "4-5",
+		"level": "高"
 	}]
 }
 ```
