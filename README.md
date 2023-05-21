@@ -47,7 +47,7 @@ blacklist.txt  config.ini  whitelist.txt  wordscheck
 
 2. curl测试下服务
 ```shell
-[root@localhost ~]# curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"content":"他在传播艳情内容"}'  http://localhost:8080/wordscheck
+[root@localhost ~]# curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"content\":\"他在传播艳情内容\"}" http://localhost:8080/wordscheck
 ```
 
 curl结果
