@@ -69,9 +69,13 @@ config.ini  配置文件
 
 Windows、MacOs部署基本相同
 
-Windows运行文件wordscheck_win.exe
-
-MacOs运行文件wordscheck_mac
+| **运行文件**  | **环境说明**  |
+| ------------ | ------------ |
+| wordscheck | Linux环境，常用的服务器x86_64、amd64 |
+| wordscheck_arm64 | Linux环境，aarch64、arm64的服务器 |
+| wordscheck_win.exe | Windows环境 |
+| wordscheck_mac_arm64 | MacOs环境，m1、m2芯片的电脑 |
+| wordscheck_mac | MacOs环境，intel芯片的电脑 |
 
 ##  http方式查询
 代码示例目录`example/http/`
