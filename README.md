@@ -11,6 +11,7 @@
 + 支持Windows、MacOs、Linux等64位主流系统
 + 可以部署在本地服务器，或部署到阿里云、腾讯云、华为云、百度云等云服务器
 + 通过下载部署包，即可一键启动私有化的"敏感词检测 API服务"
++ 支持自动云更新最新词库
 + 支持http json方式或grpc方式查询
 + 单服务参考查询效率70000次/分钟，同时支持并行服务
 + 支持自定义添加文本白名单/黑名单
@@ -87,6 +88,10 @@ Windows、MacOs部署基本相同
 blacklist.txt：黑名单，追加新的敏感词到检测服务中
 
 whitelist.txt：白名单，从检测服务中排除某些敏感词
+
+##  Docker方式部署
+`docker run -p 8080:8080 -d bosnzt/wordscheck`
+
 
 
 [坚果墙在线敏感词检测]:http://www.wordscheck.com
