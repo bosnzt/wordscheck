@@ -96,11 +96,13 @@ blacklist.txt：黑名单，追加新的敏感词到检测服务中
 whitelist.txt：白名单，从检测服务中排除某些敏感词
 
 ##  Docker方式部署
+通过Dockerfile，自行build镜像；
+
+或者
+
 `docker run -p 8080:8080 -d bosnzt/wordscheck`
 
 
 
 [坚果墙在线敏感词检测]:http://www.wordscheck.com
 [文档地址]:http://doc.wordscheck.com/docs/docs
-[版本说明]:http://doc.wordscheck.com/docs/docs/docs-1ef2q7n1kl46b
-[购买私钥]:http://doc.wordscheck.com/docs/docs/docs-1ef22tc31kev6
