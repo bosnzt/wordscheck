@@ -7,7 +7,7 @@
 
 
 ## ChatGPT类产品的搭档
-+ 检测功能可用于：应用提审上架、主管部门审核、云服务商巡查、对手恶意举报
++ 检测功能可用于：应用提审上架、主管部门审核、云服务商巡查、对手举报
 + 可以部署到：中国香港、新加坡、日本、美国、韩国、西班牙 等
 + 支持各类云服务器：阿里云、腾讯云、亚马逊云、华为云 等
 
@@ -96,13 +96,17 @@ blacklist.txt：黑名单，追加新的敏感词到检测服务中
 whitelist.txt：白名单，从检测服务中排除某些敏感词
 
 ##  Docker方式部署
-通过Dockerfile，自行build镜像；
+修改Dockerfile，调整系统环境、执行文件；配置config.ini
 
-或者
+通过Dockerfile，自行build镜像
 
-`docker run -p 8080:8080 -d bosnzt/wordscheck`
+`docker build -t 镜像名字 .`
+
+运行容器
+
+`docker run -p 8080:8080 -d 镜像名字`
 
 
 
-[坚果墙在线敏感词检测]:http://www.wordscheck.com
-[文档地址]:http://doc.wordscheck.com/docs/docs
+[坚果墙在线敏感词检测]:https://www.wordscheck.com
+[文档地址]:https://doc.wordscheck.com/docs/docs
