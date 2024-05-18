@@ -28,11 +28,16 @@ func main() {
 	content := "他在传播艳情内容"
 	url := "http://localhost:8080/wordscheck"
 	client := http.Client{}
-	values := map[string]interface{}{
+	values := map[string]string{
 		"content": content,
 	}
 	jsondata, _ := json.Marshal(&values)
 	req, _ := http.NewRequest(http.MethodPost, url, bytes.NewReader(jsondata))
+
+	accessToken := "" //如果配置了Header token验证, 填到这里
+	req.Header.Set("Authorization", "Bearer "+accessToken)
+	req.Header.Set("Content-Type", "application/json")
+
 	resp, err := client.Do(req)
 	if err != nil {
 		log.Printf("post err:%+v\n", err)

@@ -16,5 +16,5 @@ tcp6       0      0 :::50051                :::*                    LISTEN      
 code: 0
 msg: 检测成功
 return_str: 他在传播**内容
-word_list: [ { keyword: '艳情', category: '色情' } ]
+word_list: [ { keyword: '艳情', category: '色情', position: '4-5', level: '高' } ]
 ```

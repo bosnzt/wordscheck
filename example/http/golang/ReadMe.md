@@ -13,5 +13,5 @@ tcp6       0      0 :::50051                :::*                    LISTEN      
 2023/01/18 22:09:05 code=0
 2023/01/18 22:09:05 msg=检测成功
 2023/01/18 22:09:05 return_str=他在传播**内容
-2023/01/18 22:09:05 wordlist=[{Keyword:艳情 Category:色情}]
+2023/01/18 22:09:05 wordlist=[{Keyword:艳情 Category:色情 Level:高 Position:4-5}}]
 ```

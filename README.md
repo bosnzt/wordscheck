@@ -17,6 +17,9 @@
 + 支持自定义添加白名单/黑名单词条
 + 服务运行内存100M左右，非常轻便
 
+## 最新版本下载
+[Releases下载]
+
 
 ## 应用场景
 + AI智能问答、评论留言、聊天消息、直播弹幕、商品详情 等内容合规检测过滤
@@ -104,3 +107,4 @@ whitelist.txt：白名单，从检测服务中排除某些敏感词
 
 [坚果墙在线敏感词检测]:https://www.wordscheck.com
 [文档地址]:https://doc.wordscheck.com/docs/docs
+[Releases下载]:https://github.com/bosnzt/wordscheck/releases
