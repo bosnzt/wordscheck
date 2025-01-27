@@ -76,10 +76,10 @@ Windows、MacOs部署基本相同
 
 | **运行文件**  | **环境说明**  |
 | ------------ | ------------ |
-| wordscheck | Linux环境，常用的服务器x86_64、amd64 |
-| wordscheck_arm64 | Linux环境，aarch64、arm64的服务器 |
-| wordscheck_win.exe | Windows环境 |
-| wordscheck_mac | MacOs环境，intel芯片的电脑 |
+| wordscheck | Linux系统，常用的服务器x86_64、amd64 |
+| wordscheck_arm64 | Linux系统，aarch64、arm64的服务器 |
+| wordscheck_win.exe | Windows系统 |
+| wordscheck_mac | MacOs系统，M芯片的电脑 |
 
 ##  http方式查询
 代码示例目录`example/http/`

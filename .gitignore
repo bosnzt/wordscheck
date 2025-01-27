@@ -3,3 +3,4 @@ node_modules/
 !example/rpc/php/composer.json
 vendor/
 bench/
+.DS_Store
